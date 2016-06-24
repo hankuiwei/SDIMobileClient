@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="slidemenu_text">#404040</color>
+    <color name="order_bg">#808080</color>
+    <color name="order_divider">#e0e0e0</color>
+    <color name="order_textcolor">#e0e0e0</color>
+    <color name="order_state">#ff6634</color>
+    <color name="bg">#f7f7f7</color>
+    <color name="popwindow">#C1C2C2</color>
+    <color name="red">#ff0000</color>
+    <!-- ITEM BACKGROUND COLOR - STATE - PRESSED -->
+    <color name="base_start_color_pressed">#ff3590c4</color>
+    <color name="base_end_color_pressed">#ff2570ba</color>
+    <color name="rounded_container_border">#ffb7babb</color>
+    <color name="black">#000000</color>
+    <color name="blue">#3783d1</color>
+
+</resources>

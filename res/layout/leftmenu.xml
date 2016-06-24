@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/moredark" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/item_nomargin_line" />
+
+        <TextView
+            android:id="@+id/btn_replace"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_menu"
+            android:drawableEnd="@drawable/enter"
+            android:drawableLeft="@drawable/icon_order_search"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="13dip"
+            android:paddingRight="13dp"
+            android:paddingTop="5dip"
+            android:text="换件"
+            android:textColor="@color/slidemenu_text" />
+
+        <include
+            android:id="@+id/line_replace"
+            layout="@layout/item_nomargin_line" />
+
+        <TextView
+            android:id="@+id/btn_unreplace"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_menu"
+            android:drawableEnd="@drawable/enter"
+            android:drawableLeft="@drawable/icon_order_search"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="13dip"
+            android:paddingRight="13dp"
+            android:paddingTop="5dip"
+            android:text="非换件"
+            android:textColor="@color/slidemenu_text" />
+
+        <include
+            android:id="@+id/line_unreplace"
+            layout="@layout/item_nomargin_line" />
+
+        <TextView
+            android:id="@+id/btn_attachment"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_menu"
+            android:drawableEnd="@drawable/enter"
+            android:drawableLeft="@drawable/icon_order_carme"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="13dip"
+            android:paddingRight="13dp"
+            android:paddingTop="5dip"
+            android:text="附件"
+            android:textColor="@color/slidemenu_text" />
+
+        <include
+            android:id="@+id/line_attach"
+            layout="@layout/item_nomargin_line" />
+
+        <TextView
+            android:id="@+id/btn_invoice"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_menu"
+            android:drawableEnd="@drawable/enter"
+            android:drawableLeft="@drawable/icon_order_carme"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="13dip"
+            android:paddingRight="13dp"
+            android:paddingTop="5dip"
+            android:text="发票"
+            android:textColor="@color/slidemenu_text"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/line_invoice"
+            layout="@layout/item_nomargin_line"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btn_box_m"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_menu"
+            android:drawableEnd="@drawable/enter"
+            android:drawableLeft="@drawable/icon_order_box"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="13dip"
+            android:paddingRight="13dp"
+            android:paddingTop="5dip"
+            android:text="装箱单"
+            android:textColor="@color/slidemenu_text" />
+
+        <include layout="@layout/item_nomargin_line" />
+
+        <TextView
+            android:id="@+id/btn_repair_search"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_menu"
+            android:drawableEnd="@drawable/enter"
+            android:drawableLeft="@drawable/icon_order_search"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="13dip"
+            android:paddingRight="13dp"
+            android:paddingTop="5dip"
+            android:text="保修查询"
+            android:textColor="@color/slidemenu_text" />
+
+        <include layout="@layout/item_nomargin_line" />
+
+        <TextView
+            android:id="@+id/btn_text"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_menu"
+            android:drawableEnd="@drawable/enter"
+            android:drawableLeft="@drawable/icon_order_text"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="13dip"
+            android:paddingRight="13dp"
+            android:paddingTop="5dip"
+            android:text="技术通报"
+            android:textColor="@color/slidemenu_text" />
+    </LinearLayout>
+
+</LinearLayout>

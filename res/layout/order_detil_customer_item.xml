@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff" >
+
+    <TextView
+        android:id="@+id/order_type"
+        style="@style/Text.OrderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        android:text="MA标准" />
+
+    <TextView
+        android:id="@+id/order_state"
+        style="@style/Text.OrderType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/state"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="已分派" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/order_type"
+        android:layout_marginTop="13dp"
+        android:background="#e0e0e0" />
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/Text.OrderBodyBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="13dp"
+        android:text="工单子类型" />
+
+    <TextView
+        android:id="@+id/order_subtype"
+        style="@style/Text.OrderBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/tv1"
+        android:text="工商银行" />
+
+    <TextView
+        android:id="@+id/tv3"
+        style="@style/Text.OrderBodyBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_marginLeft="13dp"
+        android:text="预约上门时间" />
+
+    <TextView
+        android:id="@+id/order_date"
+        style="@style/Text.OrderBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/order_subtype"
+        android:layout_below="@id/tv1"
+        android:layout_toRightOf="@id/tv3"
+        android:text="ThinkCentre M Q75t" />
+
+    <TextView
+        android:id="@+id/tv4"
+        style="@style/Text.OrderBodyBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv3"
+        android:layout_marginLeft="13dp"
+        android:text="本次派单数量" />
+
+    <TextView
+        android:id="@+id/order_paidancount"
+        style="@style/Text.OrderBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/order_subtype"
+        android:layout_below="@id/tv3"
+        android:text="100" />
+
+    <TextView
+        android:id="@+id/tv5"
+        style="@style/Text.OrderBodyBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv4"
+        android:layout_marginLeft="13dp"
+        android:text="工单备注" />
+
+    <com.lenovo.sdimobilecllient.view.SingleLineTextView
+        android:id="@+id/order_remark"
+        style="@style/Text.OrderBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/order_subtype"
+        android:layout_below="@id/tv4"
+        android:layout_marginRight="30dp"
+        android:singleLine="true"
+        android:text="说是的是的" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/tv5"
+        android:layout_marginTop="13dp"
+        android:background="#e0e0e0" />
+
+    <TextView
+        android:id="@+id/order_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/order_subtype"
+        android:layout_marginRight="13dp"
+        android:drawableTop="@drawable/att"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textSize="12dp" />
+
+</RelativeLayout>

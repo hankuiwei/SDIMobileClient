@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="13dip"
+        android:paddingRight="13dip" >
+
+        <Button
+            android:id="@+id/btn_check"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/butt"
+            android:padding="2dp"
+            android:text="验证"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/tv_bar_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_check"
+            android:background="@drawable/input"
+            android:hint="请输入验证主机号"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:textSize="13dp" />
+
+        <FrameLayout
+            android:id="@+id/btn_read_code"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_bar_code"
+            android:layout_below="@id/tv_bar_code"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/codeblue"
+                android:drawablePadding="9dp"
+                android:gravity="center"
+                android:text="扫描主机条码验证"
+                android:textColor="#3783d1"
+                android:textSize="13dp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  提示：验证主机号是一个工具，帮助您校验实物与工单主机号是否相符，校验结果与工单流程无关。"
+        android:textColor="#808080"
+        android:textSize="13dp" />
+
+    <include layout="@layout/item_line" />
+
+</LinearLayout>

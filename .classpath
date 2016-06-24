@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="lib" path="libs/cache_code.jar" sourcepath="C:/Users/lock/Desktop/cache_code.src.zip"/>
+	<classpathentry exported="true" kind="lib" path="libs/push_uploadpt_feedback.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/lsf_device-1142.jar"/>
+	<classpathentry kind="lib" path="libs/okhttp-3.2.0.jar"/>
+	<classpathentry kind="lib" path="libs/okhttputils-2_3_8.jar"/>
+	<classpathentry kind="lib" path="libs/okio-1.6.0.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

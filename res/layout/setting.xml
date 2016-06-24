@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/btn_set_time"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp" >
+
+        <TextView
+            style="@style/Text.OrderBodyBlack"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:text="提醒时间" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/Text.OrderBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="30分钟" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/enter" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="13dip"
+        android:background="@drawable/divider_list" />
+
+    <LinearLayout
+        android:id="@+id/btn_set_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dip"
+        android:paddingRight="13dip" >
+
+        <TextView
+            style="@style/Text.OrderBodyBlack"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:text="提醒方式" />
+
+        <TextView
+            android:id="@+id/tv_mode"
+            style="@style/Text.OrderBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="铃声,震动" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/enter" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="13dip"
+        android:background="@drawable/divider_list" />
+
+    <LinearLayout
+        android:id="@+id/btn_delete_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/bg_setting_down"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/Text.HostLabel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="历史消息记录" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/ic_arrow_black" />
+    </LinearLayout>
+
+</LinearLayout>

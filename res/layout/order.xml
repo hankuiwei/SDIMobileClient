@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e0e0e0"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <include
+        android:id="@+id/wait_progress"
+        layout="@layout/progress"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/detail"
+                layout="@layout/order_detil_item" />
+
+            <include
+                android:id="@+id/detail_cus"
+                layout="@layout/order_detil_customer_item"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff" >
+
+                <TextView
+                    android:id="@+id/tv1"
+                    style="@style/Text.OrderBodyBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:text="建议解决方案" />
+
+                <TextView
+                    android:id="@+id/order_Solution"
+                    style="@style/Text.OrderBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/tv1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="造成149人死亡，事件震惊全球。原来2015年1月在意大利也几乎发生过同类事件，一名意大利机长以自己和200名乘客的生命来要挟妻子不要离婚，所幸机场接报后及时制止，避过一场灾难。 " />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@id/order_Solution"
+                    android:layout_marginTop="13dp"
+                    android:background="#e0e0e0" />
+
+                <TextView
+                    android:id="@+id/showall"
+                    style="@style/Text.OrderBodyBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:paddingBottom="13dp"
+                    android:paddingTop="13dp"
+                    android:text="展开全部"
+                    android:textColor="#3783d1"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@id/showall"
+                    android:background="#e0e0e0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#fff"
+                android:paddingBottom="13dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/beijian"
+                    style="@style/Text.OrderBodyBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:text="备件整体状态"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/order_PartsStatus"
+                    style="@style/Text.OrderBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/beijian"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/beijian"
+                    android:text="未预约"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    style="@style/Text.OrderBodyBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/beijian"
+                    android:layout_marginLeft="13dp"
+                    android:text="T1时间" />
+
+                <TextView
+                    android:id="@+id/order_Time1"
+                    style="@style/Text.OrderBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv2"
+                    android:layout_marginLeft="55dp"
+                    android:layout_toRightOf="@id/tv2"
+                    android:text="242" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    style="@style/Text.OrderBodyBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv2"
+                    android:layout_marginLeft="13dp"
+                    android:text="T4时间" />
+
+                <TextView
+                    android:id="@+id/order_Time4"
+                    style="@style/Text.OrderBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv3"
+                    android:layout_alignLeft="@id/order_Time1"
+                    android:text="2314132" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    style="@style/Text.OrderBodyBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv3"
+                    android:layout_marginLeft="13dp"
+                    android:text="是否CallBack" />
+
+                <TextView
+                    android:id="@+id/order_CallBack"
+                    style="@style/Text.OrderBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv4"
+                    android:layout_alignLeft="@id/order_Time4"
+                    android:text="否" />
+
+                <TextView
+                    android:id="@+id/callbackph"
+                    style="@style/Text.OrderBodyBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv4"
+                    android:layout_marginLeft="13dp"
+                    android:text="CallBack电话" />
+
+                <TextView
+                    android:id="@+id/order_CallBack_num"
+                    style="@style/Text.OrderBody"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/callbackph"
+                    android:layout_alignLeft="@id/order_CallBack"
+                    android:text="4008101155" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_history"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="历史换件记录" />
+
+            <ListView
+                android:id="@+id/historyList"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:cacheColorHint="#fff"
+                android:divider="#fff"
+                android:dividerHeight="0dp"
+                android:listSelector="#00000000" >
+            </ListView>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="16dp"
+                android:background="@color/transparent" />
+
+            <include
+                android:id="@+id/customer_progress"
+                layout="@layout/order_customer_progress" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

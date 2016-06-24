@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_marginTop="5dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/rounded_edittext"
+        android:orientation="vertical"
+        android:paddingBottom="5dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_result" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:text="填写原因"
+                android:textColor="#908d8d"
+                android:textSize="12dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" >
+
+            <TextView
+                android:id="@+id/radio_one_r"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_l_result"
+                android:gravity="center"
+                android:text="用户原因"
+                android:textColor="@color/radio_tx_color" />
+
+            <TextView
+                android:id="@+id/radio_two_r"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_l_result"
+                android:gravity="center"
+                android:text="站端原因"
+                android:textColor="@color/radio_tx_color" />
+
+            <TextView
+                android:id="@+id/radio_three_r"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_l_result"
+                android:gravity="center"
+                android:text="备件原因"
+                android:textColor="@color/radio_tx_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

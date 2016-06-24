@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/image_title"
+        android:layout_width="fill_parent"
+        android:layout_height="41dp"
+        android:background="#F8F9F9" >
+
+        <TextView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawableLeft="@drawable/blueleftarrow"
+            android:gravity="center_vertical"
+            android:text="返回"
+            android:textColor="#3783d1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="图片预览"
+            android:textColor="#404040"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/btn_dele"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:text="删除"
+            android:textColor="#3783d1"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <com.lenovo.sdimobileclient.ui.view.ZoomImageView
+        android:id="@+id/zoom_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix" />
+
+</LinearLayout>

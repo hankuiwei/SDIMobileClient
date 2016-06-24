@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="82dp"
+        android:padding="13dp" >
+
+        <TextView
+            android:id="@+id/tv_taskname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注"
+            android:textColor="#404040"
+            android:textSize="13dip" />
+
+        <EditText
+            android:id="@+id/tv_node"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv_taskname"
+            android:background="#0000"
+            android:gravity="top"
+            android:hint="请输入"
+            android:textColor="#808080"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_taskdesc"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/rl1"
+        android:background="#EFEFF4"
+        android:paddingBottom="9dp"
+        android:paddingLeft="13dp"
+        android:paddingTop="9dp"
+        android:text="填写说明: 请按实际结果填写"
+        android:textColor="#404040"
+        android:textSize="13dp" />
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reasion_date_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="41dp" >
+
+        <TextView
+            android:id="@+id/tv_taskname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dip"
+            android:text="请选择"
+            android:textColor="#404040"
+            android:textSize="13dip" />
+
+        <ImageView
+            android:id="@+id/imv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/enter" />
+
+        <TextView
+            android:id="@+id/btn_pre_date"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@id/imv1"
+            android:layout_toRightOf="@id/tv_taskname"
+            android:gravity="center_vertical"
+            android:text="再次上门时间"
+            android:textColor="#808080"
+            android:textSize="13dip" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentBottom="true"
+            android:background="#e0e0e0" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/rounded_edittext"
+            android:orientation="vertical"
+            android:paddingBottom="5dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_result" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:text="填写原因"
+                    android:textColor="#908d8d"
+                    android:textSize="12dip" />
+            </LinearLayout>
+
+            <com.lenovo.sdimobileclient.ui.view.AllowClickLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip" >
+
+                <TextView
+                    android:id="@+id/radio_one_r"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_l_result"
+                    android:gravity="center"
+                    android:text="用户原因"
+                    android:textColor="@color/radio_tx_color" />
+
+                <TextView
+                    android:id="@+id/radio_two_r"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_l_result"
+                    android:gravity="center"
+                    android:text="站端原因"
+                    android:textColor="@color/radio_tx_color" />
+
+                <TextView
+                    android:id="@+id/radio_three_r"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_l_result"
+                    android:gravity="center"
+                    android:text="备件原因"
+                    android:textColor="@color/radio_tx_color" />
+            </com.lenovo.sdimobileclient.ui.view.AllowClickLinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

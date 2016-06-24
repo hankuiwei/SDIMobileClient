@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page_four"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/rounded_edittext"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_result" />
+
+            <TextView
+                style="@style/Text.OrderLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:text="维修结果" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/step_4_radio_one"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_repair"
+                    android:gravity="center"
+                    android:text="已修复"
+                    android:textColor="@color/radio_tx_color" />
+
+                <TextView
+                    android:id="@+id/step_4_radio_two"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_repair"
+                    android:gravity="center"
+                    android:text="未修复"
+                    android:textColor="@color/radio_tx_color" />
+
+                <TextView
+                    android:id="@+id/step_4_radio_three"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_repair"
+                    android:gravity="center"
+                    android:text="未处理"
+                    android:textColor="@color/radio_tx_color" />
+
+                <TextView
+                    android:id="@+id/step_4_radio_four"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_repair"
+                    android:gravity="center"
+                    android:text="转送修"
+                    android:textColor="@color/radio_tx_color" />
+
+                <TextView
+                    android:id="@+id/step_4_radio_five"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_repair"
+                    android:gravity="center"
+                    android:text="上门送回"
+                    android:textColor="@color/radio_tx_color" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

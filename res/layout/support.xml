@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/new_tab_02"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btn_technology"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="-1dip"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="技术通报"
+            android:textColor="#3783d1" />
+
+        <Button
+            android:id="@+id/btn_othertext"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="-1dip"
+            android:layout_weight="1.0"
+            android:background="@color/transparent"
+            android:text="其它文章" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dip"
+            android:layout_marginRight="13dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/btn_category"
+                android:layout_width="130dp"
+                android:layout_height="32dp"
+                android:background="#f6f5f5"
+                android:drawableRight="@drawable/arr"
+                android:gravity="center"
+                android:text="常见问题"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/search_input"
+                android:hint="请输入搜索内容"
+                android:paddingLeft="2dip"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/btn_search_product"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:scaleType="center"
+                android:src="@drawable/icon_search" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentBottom="true"
+            android:background="#e0e0e0" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/support_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff"
+            android:divider="@null"
+            android:listSelector="@null"
+            android:scrollingCache="false" />
+
+        <TextView
+            android:id="@+id/tv_pageindex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="10dip"
+            android:background="@drawable/rounded_page"
+            android:gravity="center"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

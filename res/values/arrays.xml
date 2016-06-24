@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="picture_setting">
+        <item>相机拍摄</item>
+        <item>手机相册</item>
+        <!-- <item>手机视频</item> -->
+    </string-array>
+    <string-array name="tip_times">
+        <item>提前30分钟提醒</item>
+        <item>提前45分钟提醒</item>
+        <item>提前1小时提醒</item>
+        <item>提前2小时提醒</item>
+        <item>取消推送</item>
+    </string-array>
+    <string-array name="tip_mode">
+        <item>铃声</item>
+        <item>震动</item>
+        <item>铃声+震动</item>
+    </string-array>
+    <string-array name="replace_setting">
+        <item>换件</item>
+        <item>非换件</item>
+    </string-array>
+    <string-array name="reasion">
+        <item>装箱单不存在换下件条码</item>
+        <item>其他</item>
+    </string-array>
+
+</resources>

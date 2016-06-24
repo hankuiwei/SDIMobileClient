@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff" >
+
+    <TextView
+        android:id="@+id/order_type"
+        style="@style/Text.OrderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        android:text="MA标准" />
+
+    <TextView
+        android:id="@+id/order_state"
+        style="@style/Text.OrderType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/state"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="已分派" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/order_type"
+        android:layout_marginTop="13dp"
+        android:background="#e0e0e0" />
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/Text.OrderBodyBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="13dp"
+        android:text="工单子类型" />
+
+    <TextView
+        android:id="@+id/order_subtype"
+        style="@style/Text.OrderBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/tv1"
+        android:text="工商银行" />
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/Text.OrderBodyBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_marginLeft="13dp"
+        android:text="产品序列号" />
+
+    <TextView
+        android:id="@+id/order_host"
+        style="@style/Text.OrderBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/order_subtype"
+        android:layout_below="@id/tv1"
+        android:text="NA1624021" />
+
+    <TextView
+        android:id="@+id/tv3"
+        style="@style/Text.OrderBodyBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:layout_marginLeft="13dp"
+        android:text="产品型号" />
+
+    <TextView
+        android:id="@+id/order_host_code"
+        style="@style/Text.OrderBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/order_subtype"
+        android:layout_below="@id/tv2"
+        android:layout_toRightOf="@id/tv3"
+        android:text="ThinkCentre M Q75t" />
+
+    <TextView
+        android:id="@+id/tv4"
+        style="@style/Text.OrderBodyBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv3"
+        android:layout_marginLeft="13dp"
+        android:text="预约上门时间" />
+
+    <TextView
+        android:id="@+id/order_date"
+        style="@style/Text.OrderBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/order_subtype"
+        android:layout_below="@id/tv3"
+        android:text="2016-3-2    11:02" />
+
+    <TextView
+        android:id="@+id/tv6"
+        style="@style/Text.OrderBodyBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv4"
+        android:layout_marginLeft="13dp"
+        android:text="备件整体状态" />
+
+    <TextView
+        android:id="@+id/order_PartsStatus"
+        style="@style/Text.OrderBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/order_subtype"
+        android:layout_below="@id/tv4"
+        android:layout_toLeftOf="@+id/order_count"
+        android:singleLine="true"
+        android:text="未预约" />
+
+    <TextView
+        android:id="@+id/tv5"
+        style="@style/Text.OrderBodyBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv6"
+        android:layout_marginLeft="13dp"
+        android:text="故障描述" />
+
+    <TextView
+        android:id="@+id/order_host_fault"
+        style="@style/Text.OrderBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/order_subtype"
+        android:layout_below="@id/tv6"
+        android:layout_toLeftOf="@+id/order_count"
+        android:singleLine="true"
+        android:text="无法进入系统  蓝屏 sdadawdsadawdasdawdasdCLJ" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/order_host_fault"
+        android:layout_marginTop="13dp"
+        android:background="#e0e0e0" />
+
+    <TextView
+        android:id="@+id/order_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/order_subtype"
+        android:layout_marginRight="13dp"
+        android:drawableTop="@drawable/att"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/rapir_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/order_subtype"
+        android:layout_marginRight="9dp"
+        android:layout_toLeftOf="@+id/order_count"
+        android:drawableTop="@drawable/cha"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/btn_showall"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_alignBottom="@+id/order_host_fault"
+        android:layout_alignLeft="@+id/order_count"
+        android:src="@drawable/ext"
+        android:visibility="gone" />
+
+</RelativeLayout>

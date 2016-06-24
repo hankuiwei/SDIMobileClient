@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="164dp"
+    android:background="#f6f5f5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/item_white_line" />
+
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="fill_parent"
+        android:layout_height="41dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="全部"
+        android:textSize="12dp" />
+
+    <include layout="@layout/item_white_line" />
+
+    <TextView
+        android:id="@+id/tv_common"
+        android:layout_width="fill_parent"
+        android:layout_height="41dp"
+        android:layout_below="@id/tv_all"
+        android:background="#C1C2C2"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="常见问题"
+        android:textSize="12dp" />
+
+    <include layout="@layout/item_white_line" />
+
+    <TextView
+        android:id="@+id/tv_direct"
+        android:layout_width="fill_parent"
+        android:layout_height="41dp"
+        android:layout_below="@id/tv_common"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="操作指导"
+        android:textSize="12dp" />
+
+    <include layout="@layout/item_white_line" />
+
+    <TextView
+        android:id="@+id/tv_case"
+        android:layout_width="fill_parent"
+        android:layout_height="41dp"
+        android:layout_below="@id/tv_direct"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="维修案例"
+        android:textSize="12dp" />
+
+</LinearLayout>

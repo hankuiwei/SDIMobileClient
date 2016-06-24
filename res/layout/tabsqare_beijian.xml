@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sdi="http://schemas.android.com/apk/res/com.lenovo.sdimobileclient"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <include
+        android:id="@+id/wait_progress"
+        layout="@layout/progress" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1" >
+
+        <com.lenovo.sdimobileclient.ui.view.PullActivateLayout
+            android:id="@+id/pull_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical"
+            sdi:actionViewId="@id/action_view"
+            sdi:toolViewId="@id/tool_view" >
+
+            <include
+                android:id="@id/action_view"
+                layout="@layout/refresh_layout" />
+
+            <include
+                android:id="@id/tool_view"
+                layout="@layout/tool_layout" />
+
+            <ListView
+                android:id="@+id/sqare_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#fff"
+                android:divider="#e1e1e1"
+                android:dividerHeight="10dp"
+                android:listSelector="@color/transparent" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/tv_desc_sqare"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/bg"
+                android:gravity="center"
+                android:text="无备件数据"
+                android:visibility="gone" />
+        </com.lenovo.sdimobileclient.ui.view.PullActivateLayout>
+    </FrameLayout>
+
+</LinearLayout>

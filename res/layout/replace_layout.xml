@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e1e1e2"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/progress" />
+
+    <ScrollView
+        android:id="@+id/all_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/replace_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#fff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp"
+                    android:background="#e1e1e1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="13dp"
+                    android:text="已添加的换件记录"
+                    android:textColor="#404040" />
+
+                <TextView
+                    android:id="@+id/tv_nolist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/nolist"
+                    android:gravity="center_horizontal"
+                    android:text="暂无非换件记录"
+                    android:textColor="#404040"
+                    android:textSize="16dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/unreplace_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dip"
+                android:orientation="vertical" >
+
+                <include layout="@layout/unreplace" />
+
+                <TextView
+                    android:id="@+id/btn_next"
+                    style="@style/Text.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/loginout"
+                    android:gravity="center"
+                    android:text="添加" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_NoUnreplace"
+        style="@style/Text.OrderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="CC未派非换件活动，无法添加,或您已添加非换件。"
+        android:visibility="gone" />
+
+</LinearLayout>

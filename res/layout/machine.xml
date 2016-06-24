@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/host_info"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/machine_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:background="#e0e0e0"
+            android:gravity="center_vertical"
+            android:paddingLeft="13dp"
+            android:text="主机信息"
+            android:textColor="#404040"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:id="@+id/machine_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:paddingLeft="13dp" >
+
+            <LinearLayout
+                android:id="@+id/list_item_host_item_linearLayout0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text.MoreBodyBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="产品序列号" />
+
+                <TextView
+                    android:id="@+id/tv_product_no"
+                    style="@style/Text.OrderBody"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_item_host_item_linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text.MoreBodyBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="产品名称" />
+
+                <TextView
+                    android:id="@+id/tv_product_name"
+                    style="@style/Text.OrderBody"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_item_host_item_linearLayout_type_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/Text.MoreBodyBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="产品型号" />
+
+                <TextView
+                    android:id="@+id/tv_product_type_name"
+                    style="@style/Text.OrderBody"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_item_host_item_linearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text.MoreBodyBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="生产日期" />
+
+                <TextView
+                    android:id="@+id/tv_product_date"
+                    style="@style/Text.OrderBody"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/Text.MoreBodyBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="购买日期" />
+
+                <TextView
+                    android:id="@+id/tv_scandate"
+                    style="@style/Text.OrderBody"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#808080"
+                    android:textSize="13dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_item_host_item_linearLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Text.MoreBodyBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="保修截止日期" />
+
+                <TextView
+                    android:id="@+id/tv_warranty_endate"
+                    style="@style/Text.OrderBody"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/Text.MoreBodyBlack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="上门截止日期" />
+
+                <TextView
+                    android:id="@+id/tv_onsiteendate"
+                    style="@style/Text.OrderBody"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginTop="12dp"
+                android:background="#e0e0e0" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_war"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#fff"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/war_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="保修信息"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/imv_war_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ext" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#e0e0e0" />
+
+    <LinearLayout
+        android:id="@+id/warinfo_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/warinfo_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

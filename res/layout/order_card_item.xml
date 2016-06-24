@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff" >
+
+    <TextView
+        android:id="@+id/order_type"
+        style="@style/Text.OrderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        android:text="MA标准" />
+
+    <TextView
+        android:id="@+id/order_host_code"
+        style="@style/Text.OrderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/order_type"
+        android:text="启天A700" />
+
+    <TextView
+        android:id="@+id/order_state"
+        style="@style/Text.OrderType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/state"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="已分派" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/order_type"
+        android:layout_marginTop="13dp"
+        android:background="#e0e0e0" />
+
+    <TextView
+        android:id="@+id/order_code"
+        style="@style/Text.OrderBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="13dp"
+        android:text="232423424321232132322" />
+
+    <TextView
+        android:id="@+id/order_customer"
+        style="@style/Text.OrderBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_code"
+        android:layout_marginLeft="13dp"
+        android:drawableLeft="@drawable/icon_02"
+        android:drawablePadding="10dp"
+        android:text="王女士" />
+
+    <TextView
+        android:id="@+id/order_customer_phone"
+        style="@style/Text.OrderBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_code"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@id/order_customer"
+        android:text="12345678900" />
+
+    <ImageView
+        android:id="@+id/ic_customer_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_customer"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/icon_04" />
+
+    <TextView
+        android:id="@+id/order_customer_company"
+        style="@style/Text.OrderBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_customer"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/ic_customer_address"
+        android:adjustViewBounds="true"
+        android:maxWidth="100dp"
+        android:minWidth="0dp"
+        android:singleLine="true"
+        android:text="百度公司百度公司百度公司百度公司" />
+
+    <TextView
+        android:id="@+id/order_customer_address"
+        style="@style/Text.OrderBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_customer"
+        android:layout_toLeftOf="@+id/yuyue"
+        android:layout_toRightOf="@id/order_customer_company"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:text="北京市海淀区东北旺西路北京市海淀区东北旺西路北京市海淀区东北旺西路" />
+
+    <TextView
+        android:id="@+id/yuyue"
+        style="@style/Text.OrderBodyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/line"
+        android:layout_marginRight="13dp"
+        android:text="预约上门时间" />
+
+    <TextView
+        android:id="@+id/order_date"
+        style="@style/Text.OrderBodyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yuyue"
+        android:text="2016-3-1" />
+
+    <TextView
+        android:id="@+id/order_time"
+        style="@style/Text.OrderBodyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_date"
+        android:text="14:50" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/order_customer_address"
+        android:layout_marginTop="13dp"
+        android:background="#e0e0e0" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line2"
+        android:layout_marginRight="13dp" >
+
+        <TextView
+            android:id="@+id/order_routeplan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dp"
+            android:layout_toLeftOf="@+id/view1"
+            android:drawableLeft="@drawable/nav"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical"
+            android:text="导航"
+            android:textColor="#3783d1" />
+
+        <TextView
+            android:id="@+id/order_callphone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/tel"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical"
+            android:text="电话"
+            android:textColor="#6abf4a" />
+
+        <ImageView
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dp"
+            android:layout_toLeftOf="@+id/order_callphone"
+            android:src="@drawable/line" />
+    </RelativeLayout>
+
+</RelativeLayout>

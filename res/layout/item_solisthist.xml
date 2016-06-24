@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_soliisthist"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="13dp" >
+
+    <TextView
+        android:id="@+id/soid"
+        style="@style/Text.OrderBody"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="13dp"
+        android:text="1234234123124234123" />
+
+    <TextView
+        android:id="@+id/ServiceTypeName"
+        style="@style/Text.OrderBody"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:paddingRight="13dp"
+        android:text="MA标准" />
+
+</LinearLayout>

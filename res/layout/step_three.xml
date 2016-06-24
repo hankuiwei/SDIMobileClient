@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page_three"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110dip"
+        android:background="@drawable/rounded_edittext"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_result" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_weight="1"
+                android:text="解决方案"
+                android:textColor="#908d8d"
+                android:textSize="12dip" />
+
+            <ImageView
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:padding="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:src="@drawable/btn_add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:id="@+id/step_3_radio_one"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_replace"
+                android:gravity="center"
+                android:text="换件"
+                android:textColor="@color/radio_tx_color" />
+
+            <TextView
+                android:id="@+id/step_3_radio_two"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_replace"
+                android:gravity="center"
+                android:text="非换件"
+                android:textColor="@color/radio_tx_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/unreplace"
+        android:visibility="gone" />
+
+    <include layout="@layout/replace" />
+
+    <TextView
+        android:id="@+id/btn_next"
+        style="@style/Text.Title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/btn_next_normal"
+        android:gravity="center"
+        android:padding="5dip"
+        android:text="下一步" />
+
+</LinearLayout>

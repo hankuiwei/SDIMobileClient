@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="DuplicateIds" severity="ignore" />
+    <issue id="HardcodedText" severity="ignore">
+        <ignore path="res/layout/order_card_item.xml" />
+        <ignore path="res/layout/order_detil_item.xml" />
+    </issue>
+    <issue id="InflateParams">
+        <ignore path="src/com/lenovo/sdimobileclient/ui/OrderActivity.java" />
+    </issue>
+    <issue id="NewApi" severity="ignore" />
+    <issue id="ResAuto" severity="ignore" />
+    <issue id="RtlCompat" severity="ignore" />
+    <issue id="RtlHardcoded" severity="ignore">
+        <ignore path="res/layout/order_card_item.xml" />
+        <ignore path="res/layout/order_detil_item.xml" />
+    </issue>
+    <issue id="SimpleDateFormat" severity="ignore" />
+    <issue id="SpUsage" severity="ignore">
+        <ignore path="res/layout/order_detil_item.xml" />
+    </issue>
+    <issue id="WrongViewCast" severity="ignore" />
+</lint>

@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/progress"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/sroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#e1e1e2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp" >
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:singleLine="true"
+                    android:text="换件类别"
+                    android:textColor="#404040"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="请选择换件类型"
+                    android:singleLine="true"
+                    android:textColor="#808080"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/enter" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#e0e0e0" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp" >
+
+                <TextView
+                    android:id="@+id/tv2y"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:singleLine="true"
+                    android:text="换件类型"
+                    android:textColor="#404040"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="请选择换件类型"
+                    android:singleLine="true"
+                    android:textColor="#808080"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/enter" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="#e0e0e0" />
+
+            <LinearLayout
+                android:id="@+id/upchange_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/Text.OrderLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="换上件信息"
+                        android:textColor="#404040"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#e0e0e0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/down_changeview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/Text.OrderLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dip"
+                        android:text="换下件信息"
+                        android:textColor="#404040"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="13dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="42dp"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="换下件标识"
+                            android:textColor="#404040"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/down_btn_id"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:hint="请选择换件标识"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:textColor="#808080"
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginRight="13dp"
+                            android:src="@drawable/enter" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lay_down_btn_reason"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/tabbarbg"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dp"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="换下件非损原因"
+                            android:textColor="#404040"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/down_btn_reason"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:hint="请选择非损原因"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:textColor="#808080"
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginRight="13dp"
+                            android:src="@drawable/enter" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="126dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="#fdfdfe"
+                        android:orientation="vertical"
+                        android:paddingLeft="13dp" >
+
+                        <EditText
+                            android:id="@+id/down_code"
+                            android:layout_width="fill_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="21dp"
+                            android:background="@drawable/input"
+                            android:hint="请输入换下件条码"
+                            android:padding="0dp"
+                            android:singleLine="true"
+                            android:textColor="#ababab"
+                            android:textSize="16dp" />
+
+                        <EditText
+                            android:id="@+id/down_num"
+                            android:layout_width="fill_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="21dp"
+                            android:layout_marginTop="21dp"
+                            android:background="@drawable/input"
+                            android:hint="请输入换下件编码"
+                            android:padding="0dp"
+                            android:singleLine="true"
+                            android:textColor="#ababab"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:paddingRight="13dp" >
+
+                        <TextView
+                            android:id="@+id/down_code_bar"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="#3783d1"
+                            android:drawableTop="@drawable/codewhite"
+                            android:gravity="center"
+                            android:paddingTop="6dp"
+                            android:text="扫描条码" />
+
+                        <TextView
+                            android:id="@+id/down_box"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="#95a9f5"
+                            android:gravity="center"
+                            android:text="装箱单" />
+
+                        <TextView
+                            android:id="@+id/down_sys_code"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="#e1e1e2"
+                            android:gravity="center"
+                            android:text="系统产生条码" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp" >
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:singleLine="true"
+                        android:text="故障现象"
+                        android:textColor="#404040"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/down_btn_desc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:hint="请选择故障现象"
+                        android:singleLine="true"
+                        android:textColor="#808080"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:src="@drawable/enter" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp" >
+
+                    <TextView
+                        android:id="@+id/tv5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:singleLine="true"
+                        android:text="故障代码"
+                        android:textColor="#404040"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/downdesccode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="-"
+                        android:singleLine="true"
+                        android:textColor="#808080"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_marginLeft="13dp"
+                    android:background="#e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp" >
+
+                    <TextView
+                        android:id="@+id/down_sys_reasion"
+                        android:layout_width="fill_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="5dp"
+                        android:drawableRight="@drawable/enter"
+                        android:gravity="center_vertical"
+                        android:hint="请选择系统生成条码原因"
+                        android:singleLine="true"
+                        android:textSize="16dp"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/line_down_sys_reasion"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_marginLeft="13dp"
+                        android:background="#e0e0e0"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/down_input_desc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_marginTop="2dip"
+                        android:background="@drawable/input"
+                        android:hint="故障现象"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/line_down_input_desc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_marginLeft="13dp"
+                        android:background="#e0e0e0"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="特殊备注" />
+
+                    <EditText
+                        android:id="@+id/down_sp_note"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dip"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:hint="500字以内 " />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_submit"
+                style="@style/Text.Title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="40dip"
+                android:background="@drawable/loginout"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="提交" />
+
+            <include layout="@layout/dialog_desc" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

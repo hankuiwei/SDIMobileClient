@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <dimen name="standard_padding">8dip</dimen>
+    <dimen name="half_padding">4dip</dimen>
+    <dimen name="number_picker_width">50dip</dimen>
+    <dimen name="slidingmenu_offset">80dp</dimen>
+    <dimen name="shadow_width">0dp</dimen>
+    
+
+</resources>

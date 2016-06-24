@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@android:id/icon"
+            android:layout_width="92dip"
+            android:layout_height="92dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="5dip"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/ic_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_media_play"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/att_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="发票" />
+
+            <TextView
+                android:id="@+id/att_cate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip" />
+
+            <TextView
+                android:id="@+id/att_order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="20dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/btn_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delbuttwhite"
+                android:gravity="center_horizontal"
+                android:text="上传"
+                android:textColor="#3783d1" />
+
+            <TextView
+                android:id="@+id/btn_att_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|right"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/delbuttwhite"
+                android:gravity="center_horizontal"
+                android:text="删除"
+                android:textColor="#3783d1" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

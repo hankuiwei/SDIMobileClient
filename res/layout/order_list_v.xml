@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/order_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <HorizontalScrollView
+        android:id="@+id/order_count_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#7e7d7d"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/bg_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="12dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="3dip" >
+
+                <TextView
+                    android:id="@+id/tv_uncontact"
+                    style="@style/Text.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:text="待联系(8)" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginTop="2dip"
+                    android:background="#f25221" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bg_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="12dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="3dip" >
+
+                <TextView
+                    android:id="@+id/tv_undoor"
+                    style="@style/Text.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:text="待上门(8)" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginTop="2dip"
+                    android:background="#f29721" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bg_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="12dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="3dip" >
+
+                <TextView
+                    android:id="@+id/tv_dooring"
+                    style="@style/Text.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:text="上门中(8)" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginTop="2dip"
+                    android:background="#f9d322" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bg_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="12dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="3dip" >
+
+                <TextView
+                    android:id="@+id/tv_tobefinished"
+                    style="@style/Text.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:text="待完成(8)" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginTop="2dip"
+                    android:background="#e3fa22" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bg_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="12dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="3dip" >
+
+                <TextView
+                    android:id="@+id/tv_finish"
+                    style="@style/Text.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:text="服务完(8)" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginTop="2dip"
+                    android:background="#7efa22" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg"
+        android:divider="@null"
+        android:dividerHeight="4dip"
+        android:listSelector="@null"
+        android:scrollingCache="false" />
+
+</LinearLayout>

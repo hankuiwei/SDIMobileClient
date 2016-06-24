@@ -1,0 +1,368 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lenovo.sdimobileclient"
+    android:versionCode="1"
+    android:versionName="2.98" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="20" />
+
+    <application
+        android:name=".LenovoServicesApplication"
+        android:icon="@drawable/logo128"
+        android:label="@string/app_name"
+        android:theme="@style/appBase" >
+        <activity
+            android:name=".ui.LogoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--
+             <activity android:name=".ui.MsgActivity" >
+            <intent-filter>
+                <action android:name="com.lemeap.meap.MESSAGE_LIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name=".ui.HistoryRepairList"
+            android:label="@string/title_historyrepair"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.TabOrderNewActivity"
+            android:label="@string/tab_order"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+        <activity
+            android:name=".ui.ReplaceActivity"
+            android:label="@string/title_spare"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.dialog.Check1Dialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog" >
+        </activity>
+        <activity
+            android:name=".ui.CheckReplaceActivity"
+            android:label="@string/title_checkspare"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.TabSpareActivity"
+            android:label="@string/title_borrowinfo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.TabOrderSearchActivity"
+            android:label="@string/title_ordersearch"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.OrderProgressActivity"
+            android:label="@string/title_progress"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.TestActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ImageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="com.lemeap.meap.MESSAGE_LIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.TabGroup" />
+        <activity
+            android:name=".ui.PicturePickerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ui.OrderActivity"
+            android:label="@string/tab_process"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.OrderInfoActivity"
+            android:label="@string/tab_process"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AddReplaceActivity"
+            android:label="@string/title_addreplace"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.lenovo.sdimobilecllient.camer.MipcaActivityCapture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UnReplaceActivity"
+            android:label="@string/title_unreplace"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AlarmAlertActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ui.AttachUploadActivity"
+            android:label="@string/title_attachupload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.InvoiceUploadActivity"
+            android:label="@string/title_invoiceupload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.TabOrderActivity"
+            android:label="@string/tab_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.OrderListActivity"
+            android:label="@string/tab_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ReplaceBoxActivity"
+            android:label="@string/title_box"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.DevelopActivity" />
+        <activity
+            android:name=".ui.TabSupportActivity"
+            android:label="@string/tab_support" />
+        <activity
+            android:name=".ui.TabMoreActivity"
+            android:label="@string/tab_more"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ProcessInfoActivity"
+            android:label="@string/tab_process_info" />
+        <activity
+            android:name=".ui.TabTipActivity"
+            android:label="@string/tab_process_tixing"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RoutePlanActivity"
+            android:label="@string/title_con_coustomer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AttachMentActivity"
+            android:label="@string/title_attach"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AttachmentListActivity"
+            android:label="@string/title_attach"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SettingActivity"
+            android:label="@string/title_setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.HostSearchActivity"
+            android:label="@string/title_host_search"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 因为部分lenovo 手机provider 更改了authorities  原为com.lenovo.services.provides.absprovider 后果不知道 -->
+        <provider
+            android:name=".provider.LenovoServicesProvider"
+            android:authorities="com.lenovo.sdimobile.services.provides.absprovider" />
+        <provider
+            android:name="com.foreveross.cache.android.CacheProvider"
+            android:authorities="com.foreveross.cache"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver android:name="com.lenovo.sdimobileclient.receiver.SMSReceiver" >
+            <intent-filter android:priority="10000" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.AlarmReceiver" >
+        </receiver>
+        <receiver
+            android:name=".receiver.LockScreenReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.lenovo.sdimobileclient.receiver.MyPushReceiver"
+            android:permission="com.lenovo.lsf.device.permission.MESSAGE" >
+            <intent-filter>
+                <action android:name="com.lenovo.sdimobileclient.receiver.MyPushReceiver" >
+                </action>
+                <action android:name="10086" >
+                </action>
+
+                <category android:name="com.lenovo.sdimobileclient" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.lenovo.sdimobileclient.receiver.PushAndroidLReceiver" >
+            <intent-filter>
+                <action android:name="com.lenovo.lsf.device.ANDROID_L_MSG" >
+                </action>
+
+                <category android:name="com.lenovo.sdimobileclient" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.lenovo.lsf.push.receiver.PushReceiver"
+            android:process=":PushService" >
+            <intent-filter>
+                <action android:name="com.lenovo.lsf.intent.REGISTER" />
+                <action android:name="com.lenovo.lsf.intent.UNREGISTER" />
+                <action android:name="com.lenovo.lsf.intent.LOG_CONTROL" />
+                <action android:name="com.lenovo.lsf.intent.PUSH_TYPE_CONTROL" />
+                <action android:name="com.lenovo.lsf.intent.CLEAR_NOTIF" />
+                <action android:name="com.lenovo.lsf.intent.PUSH_TEST_MESSAGE" />
+                <action android:name="com.lenovo.lsf.intent.SWITCH_ON_SERVICE" />
+                <action android:name="com.lenovo.lsf.intent.SWITCH_OFF_SERVICE" />
+                <action android:name="com.lenovo.lsf.intent.CANCEL_NOTIFICATION" />
+                <action android:name="com.lenovo.lsf.intent.ACTIVE_APP" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.lenovo.lsf.push.service.PushService"
+            android:exported="true"
+            android:process=":PushService" >
+        </service>
+
+        <activity
+            android:name="com.lenovo.lsf.push.ui.DisplayActivity"
+            android:process=":DisplayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+
+        <service
+            android:name="com.lenovo.lsf.push.ui.DisplayService"
+            android:exported="true"
+            android:process=":PushService" >
+        </service>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE"
+            android:process=":remote" >
+        </service>
+        <service android:name="com.lenovo.sdimobileclient.service.NotificationService" >
+            <intent-filter>
+                <action android:name="Msg_NotificationService" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="bidssXNE6PcXUGWWZoX4EEMSerrsXciE" />
+
+        <service android:name=".service.LocationService" />
+        <service android:name=".service.AlarmKlaxonService" />
+        <service android:name=".service.UploadAttachService" />
+    </application>
+
+    <uses-permission android:name="com.lenovo.lsf.device.permission.MESSAGE" />
+    <uses-permission android:name="com.lenovo.lsf.device.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <!-- <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" /> -->
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+</manifest>

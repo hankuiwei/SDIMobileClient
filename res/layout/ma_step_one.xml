@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page_one"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/rounded_user"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:id="@+id/phone_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/btn_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center" >
+
+            <TextView
+                style="@style/Text.OrderLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客户地址" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:src="@drawable/ic_arrow_black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/step_one_order_process"
+            style="@style/Text.OrderValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/btn_bg"
+            android:drawableLeft="@drawable/icon_process"
+            android:gravity="center"
+            android:paddingLeft="15dip"
+            android:paddingRight="30dip"
+            android:text="工单进度" />
+    </LinearLayout>
+
+    
+
+   
+
+    <TextView
+        android:id="@+id/btn_next"
+        style="@style/Text.Title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/btn_next_normal"
+        android:gravity="center"
+        android:padding="5dip"
+        android:text="@string/btn_sure" />
+
+</LinearLayout>

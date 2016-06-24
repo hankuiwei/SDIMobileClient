@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg"
+        android:divider="@drawable/divider_list"
+        android:dividerHeight="1dip"
+        android:listSelector="@null"
+        android:scrollingCache="false" />
+
+    <TextView
+        android:id="@+id/tv_desc_box"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bg"
+        android:gravity="center"
+        android:text="无装箱单数据"
+        android:visibility="gone" />
+
+</LinearLayout>

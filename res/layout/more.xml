@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e1e1e2"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/btn_host"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="13dp"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:gravity="center"
+            android:text="主机及保修"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/enter" />
+
+        <TextView
+            android:id="@+id/btn_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="110dp"
+            android:padding="0dp"
+            android:text="生产日期、保修期"
+            android:textColor="#808080"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="13dp"
+        android:background="#e0e0e0" />
+
+    <RelativeLayout
+        android:id="@+id/more_click_zhuangxiangdan"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:gravity="center"
+            android:text="装箱单"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/enter" />
+
+        <TextView
+            android:id="@+id/btn_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="110dp"
+            android:gravity="center"
+            android:text="主板CPU存盘卡"
+            android:textColor="#808080"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/more_click_fujian"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:gravity="center"
+            android:text="附件"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/enter" />
+
+        <TextView
+            android:id="@+id/btn_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="110dp"
+            android:gravity="center"
+            android:text="工单附件同步状态"
+            android:textColor="#808080"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/more_click_setting"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:gravity="center"
+            android:text="上门提醒时间"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/btn_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="110dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#808080"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/Text.OrderBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_customer_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:drawablePadding="25dp"
+            android:drawableRight="@drawable/enter"
+            android:text="30分钟"
+            android:textColor="#808080"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="13dp"
+        android:background="#e0e0e0" />
+
+    <TextView
+        android:id="@+id/btn_switch_user"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="#404040"
+        android:textSize="16dip"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="添加附件"
+        android:visibility="gone" />
+
+</LinearLayout>

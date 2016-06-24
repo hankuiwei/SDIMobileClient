@@ -1,0 +1,68 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-optimizationpasses 5  
+-dontusemixedcaseclassnames  
+-dontskipnonpubliclibraryclasses  
+-dontpreverify  
+-verbose  
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*  
+  
+-keepattributes *Annotation*  
+-keepattributes Signature  
+
+ -libraryjars libs/baidumapapi_base_v3_6_1.jar
+ -libraryjars libs/baidumapapi_cloud_v3_6_1.jar
+ -libraryjars libs/baidumapapi_map_v3_6_1.jar
+ -libraryjars libs/baidumapapi_radar_v3_6_1.jar
+ -libraryjars libs/baidumapapi_search_v3_6_1.jar
+ -libraryjars libs/baidumapapi_util_v3_6_1.jar
+ -libraryjars libs/cache_code.jar
+ -libraryjars libs/gson-2.1.jar
+ -libraryjars libs/locSDK_6.13.jar
+ -libraryjars libs/lsf_device-1142.jar
+ -libraryjars libs/okhttp-3.2.0.jar
+ -libraryjars libs/okhttputils-2_3_8.jar
+ -libraryjars libs/okio-1.6.0.jar
+ -libraryjars libs/picasso-2.5.2.jar
+ -libraryjars libs/push_uploadpt_feedback.jar
+ 
+ 
+ 
+ 
+-keep class com.baidu.** {*;}
+-keep class vi.com.** {*;}    
+-dontwarn com.baidu.**
+-dontwarn com.squareup.okhttp.**
+#okhttputils
+-dontwarn com.zhy.http.**
+-keep class com.zhy.http.**{*;}
+
+
+#okhttp
+-dontwarn okhttp3.**
+-keep class okhttp3.**{*;}
+
+
+#okio
+-dontwarn okio.**
+-keep class okio.**{*;}
+-dontwarn com.lenovo.lsf.**

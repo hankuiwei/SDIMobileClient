@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_phone"
+    android:layout_width="fill_parent"
+    android:layout_height="41dp"
+    android:layout_marginLeft="13dp"
+    android:background="@drawable/downline"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_phonetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="客户手机"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="13dp"
+        android:gravity="center"
+        android:text="12312312312312"
+        android:textColor="#808080"
+        android:textSize="13dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="41dp" >
+
+        <ImageView
+            android:id="@+id/imv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dip"
+            android:src="@drawable/tel" />
+
+        <ImageView
+            android:id="@+id/btn_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imv1"
+            android:layout_toLeftOf="@+id/imv1"
+            android:padding="5dip"
+            android:src="@drawable/sms"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

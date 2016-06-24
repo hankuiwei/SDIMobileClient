@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Text.OrderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/downline"
+        android:drawableLeft="@drawable/edit"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="标题" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="#e0e0e0"
+        android:dividerHeight="0.5dp" >
+    </ListView>
+
+</LinearLayout>

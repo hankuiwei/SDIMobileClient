@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="温馨提示：" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一般保内维修，请选择“部件更换”，例外情况如下："
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1、如果有部件不回收服务，请选择“部件不回收”；"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2、如有海量升级服务，请选择“海量升级”；"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3、显示器换件维修和销售备件保修，请选择“整件更换”；"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4、服务产品维修（非家庭网络部署，智享无线），请选择“服务产品更换_继承保修”；"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5、家庭网络部署、智享无线，请“选择服务产品更换_重算保修”；"
+        android:textSize="12dp" />
+
+</LinearLayout>

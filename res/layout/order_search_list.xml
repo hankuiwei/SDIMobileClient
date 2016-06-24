@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:src="@drawable/icon_sort"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/search_input"
+            android:hint="工单号/主机号/姓名/电话"
+            android:paddingLeft="2dip"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/btn_search_product"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#fff"
+            android:src="@drawable/icon_search" />
+    </LinearLayout>
+
+    <include
+        android:id="@id/tool_view"
+        layout="@layout/tool_layout" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg"
+        android:divider="@null"
+        android:dividerHeight="4dip"
+        android:listSelector="@null"
+        android:scrollingCache="false" />
+
+</LinearLayout>

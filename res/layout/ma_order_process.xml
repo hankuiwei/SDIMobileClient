@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_order_process"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_order_process_title"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dip"
+            android:text="工单进度" />
+
+        <ImageView
+            android:id="@+id/btn_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:src="@drawable/ic_cancel" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dip"
+        android:paddingTop="30dip" >
+
+        <ImageView
+            android:layout_width="2dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="73dip"
+            android:background="#afaba9" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_step_one"
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:gravity="right"
+                    android:text="进行中" />
+
+                <Button
+                    android:id="@+id/step_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_processing"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dip"
+                    android:text="1"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="联系客户" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_step_two"
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:gravity="right" />
+
+                <Button
+                    android:id="@+id/step_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_process_un"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dip"
+                    android:text="2"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="到达现场" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_step_four"
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:gravity="right" />
+
+                <Button
+                    android:id="@+id/step_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_process_un"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dip"
+                    android:text="3"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="登记维修结果" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_step_five"
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:gravity="right" />
+
+                <Button
+                    android:id="@+id/step_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_process_un"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dip"
+                    android:text="4"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="服务完" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
